@@ -2,7 +2,7 @@ package test;
 import domain.Exercise;
 
 /**
- * Тестовый класс для проверки функциональности
+ * Functional test class
  * @author Odie
  */
 
@@ -13,10 +13,10 @@ public class TestResult {
         int R=158635;
         if(R>=100000 && R<1000000)
             {
-            System.out.println("Число "+R+" \r\n" + "в двоичной системе счисления: "+Exercise.CalculateBinarySystem(R)+"\nв восьмеричной системе счисления: "+Exercise.CalculateOctalSystem(R)+"\nв шестнадцатеричной системе счисления: "+Exercise.CalculateHexadecimalSystem(R));
+            System.out.println("Number "+R+" \r\n" + "\r\n" + "in binary notation: "+Exercise.CalculateBinarySystem(R)+"\n\r\n" + "in octal number system: "+Exercise.CalculateOctalSystem(R)+"\n\r\n" + "in hexadecimal notation: "+Exercise.CalculateHexadecimalSystem(R));
             }
         else{
-            System.out.println("Число R должно быть шестизначным!");
+            System.out.println("The number R must be six digits!");
             }
     }
 }
